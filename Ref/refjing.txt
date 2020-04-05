@@ -207,7 +207,18 @@ https://assetstore.unity.com/packages/3d/environments/fantasy/fancy-tavern-52113
 lite
 https://assetstore.unity.com/packages/3d/environments/fantasy/hand-painted-forest-lite-47738
 
+fire spirit
+https://assetstore.unity.com/packages/vfx/particles/fire-explosions/procedural-fire-141496
 
+spooky
+https://assetstore.unity.com/packages/3d/environments/fantasy/fantasy-root-forest-84381
 
+https://assetstore.unity.com/packages/3d/environments/fantasy/fantasy-forest-21140
+
+https://assetstore.unity.com/packages/3d/environments/fantasy/horror-forest-127691
+
+https://assetstore.unity.com/packages/3d/environments/fantasy/spooky-forest-environment-pack-69280
+
+https://assetstore.unity.com/packages/3d/environments/fantasy/spooky-woods-33004
 
 
