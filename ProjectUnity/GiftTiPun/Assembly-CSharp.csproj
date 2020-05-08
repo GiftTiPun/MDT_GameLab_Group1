@@ -63,6 +63,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Script\PlayerAttack.cs" />
+    <Compile Include="Assets\Script\PlayerHealth.cs" />
     <Compile Include="Assets\Script\WalkingPlayer.cs" />
     <Compile Include="Assets\Script\camerarotation.cs" />
     <Reference Include="Unity.Timeline.Editor">
