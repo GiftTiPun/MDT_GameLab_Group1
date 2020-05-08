@@ -5,6 +5,7 @@ using UnityEngine;
 public class WalkingPlayer : MonoBehaviour
 {
     public float SpeedMovement = 3.0f;
+    public Camera cameramain; 
     
 
 
@@ -36,6 +37,8 @@ public class WalkingPlayer : MonoBehaviour
         {
             transform.position += transform.TransformDirection(Vector3.up) *2* Time.deltaTime * SpeedMovement;
         }
+        Quaternion rotate = Quaternion.Euler(0, cameramain.transform.rotation.eulerAngles.y, 0);
+        transform.rotation = rotate;
         
     }
 }
