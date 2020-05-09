@@ -134,6 +134,7 @@ GameObject:
   - component: {fileID: 194649986}
   - component: {fileID: 194649985}
   - component: {fileID: 194649989}
+  - component: {fileID: 194649990}
   m_Layer: 0
   m_Name: Obstacle (2)
   m_TagString: enemy
@@ -231,6 +232,21 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &194649990
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 194649984}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0384e27faaa577c4db0df91bb7832d07, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemy_max_health: 50
+  enemy_current_health: 50
+  body: {fileID: 0}
 --- !u!1 &255263249
 GameObject:
   m_ObjectHideFlags: 0
@@ -244,6 +260,7 @@ GameObject:
   - component: {fileID: 255263251}
   - component: {fileID: 255263250}
   - component: {fileID: 255263254}
+  - component: {fileID: 255263255}
   m_Layer: 0
   m_Name: Obstacle (3)
   m_TagString: enemy
@@ -341,6 +358,21 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &255263255
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 255263249}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0384e27faaa577c4db0df91bb7832d07, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemy_max_health: 50
+  enemy_current_health: 50
+  body: {fileID: 255263249}
 --- !u!1 &285670425
 GameObject:
   m_ObjectHideFlags: 0
@@ -464,6 +496,7 @@ GameObject:
   - component: {fileID: 633250615}
   - component: {fileID: 633250614}
   - component: {fileID: 633250618}
+  - component: {fileID: 633250619}
   m_Layer: 0
   m_Name: Obstacle (1)
   m_TagString: enemy
@@ -561,6 +594,21 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &633250619
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 633250613}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0384e27faaa577c4db0df91bb7832d07, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemy_max_health: 50
+  enemy_current_health: 50
+  body: {fileID: 0}
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -998,7 +1046,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 31f3bca983d15104b90cfdc7273a80fe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  attack_Power: 10
-  attack_Range: 15
+  attack_Power: -10
   TimebetweenAttack: 0.5
-  target: {fileID: 633250613}
