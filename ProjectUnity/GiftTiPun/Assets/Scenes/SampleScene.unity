@@ -241,12 +241,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 194649984}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0384e27faaa577c4db0df91bb7832d07, type: 3}
+  m_Script: {fileID: 11500000, guid: 49679afb743ede843be0c4ecf29c9818, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   enemy_max_health: 50
   enemy_current_health: 50
-  body: {fileID: 0}
+  body: {fileID: 194649984}
 --- !u!1 &255263249
 GameObject:
   m_ObjectHideFlags: 0
@@ -367,7 +367,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 255263249}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0384e27faaa577c4db0df91bb7832d07, type: 3}
+  m_Script: {fileID: 11500000, guid: 49679afb743ede843be0c4ecf29c9818, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   enemy_max_health: 50
@@ -386,6 +386,7 @@ GameObject:
   - component: {fileID: 285670427}
   - component: {fileID: 285670426}
   - component: {fileID: 285670430}
+  - component: {fileID: 285670431}
   m_Layer: 0
   m_Name: Obstacle
   m_TagString: Untagged
@@ -483,6 +484,21 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &285670431
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 285670425}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49679afb743ede843be0c4ecf29c9818, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemy_max_health: 50
+  enemy_current_health: 50
+  body: {fileID: 285670425}
 --- !u!1 &633250613
 GameObject:
   m_ObjectHideFlags: 0
@@ -603,12 +619,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 633250613}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0384e27faaa577c4db0df91bb7832d07, type: 3}
+  m_Script: {fileID: 11500000, guid: 49679afb743ede843be0c4ecf29c9818, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   enemy_max_health: 50
   enemy_current_health: 50
-  body: {fileID: 0}
+  body: {fileID: 633250613}
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -794,7 +810,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 963194225}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 69bc16d0e0ec975469df1e966c9a26a2, type: 3}
+  m_Script: {fileID: 11500000, guid: 2e8c08c802c0cb249aa7a112f0e2fc63, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   speedH: 2
@@ -906,9 +922,9 @@ GameObject:
   - component: {fileID: 2043820270}
   - component: {fileID: 2043820269}
   - component: {fileID: 2043820268}
-  - component: {fileID: 2043820274}
   - component: {fileID: 2043820273}
   - component: {fileID: 2043820275}
+  - component: {fileID: 2043820274}
   m_Layer: 0
   m_Name: player
   m_TagString: Player
@@ -1018,8 +1034,8 @@ SphereCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 2
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Radius: 2.1669059
+  m_Center: {x: 0, y: 0, z: 0.16690594}
 --- !u!114 &2043820274
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1029,7 +1045,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 2043820267}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 37009fa6db311f6439a7df0df10cafce, type: 3}
+  m_Script: {fileID: 11500000, guid: 8497890bde117fc499df330537f5ed9c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   SpeedMovement: 3

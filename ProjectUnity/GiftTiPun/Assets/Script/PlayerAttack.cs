@@ -7,20 +7,18 @@ public class PlayerAttack : MonoBehaviour
     public float attack_Power = -10f;
     public float TimebetweenAttack = 0.5f;
     GameObject target;
-    
-    
 
-
-    private void OnCollisionStay(Collider other)
+    private void OnTriggerStay(Collider other)
     {
-        if (other.gameObject.tag == "enemy")
+        if (other.gameObject.tag == "enemy" && Input.GetMouseButtonDown(0))
         {
-            EnemyHealth Ehealth = other.gameObject.GetComponent<EnemyHealth>();
+            EnemyHealth1 Ehealth = other.gameObject.GetComponent<EnemyHealth1>();
             Ehealth.adjustcurrenthealth(attack_Power);
-            
+
         }
-        
     }
+    
+   
     private void Attack()
     {
         Debug.Log("Attack");
