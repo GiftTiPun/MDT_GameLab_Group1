@@ -6,7 +6,7 @@ public class EnemyAttack : MonoBehaviour
 {
     // Start is called before the first frame update
     public float timeBetweenAttacks = 0.5f;     // The time in seconds between each attack.
-    public int attackDamage = 10;
+    public int attackDamage = -10;
 
     Animator anim;                              // Reference to the animator component.
     GameObject player;                          // Reference to the player GameObject.
@@ -20,7 +20,7 @@ public class EnemyAttack : MonoBehaviour
     {
         // Setting up the references.
         player = GameObject.FindGameObjectWithTag("Player");
-        playerHealth = player.GetComponent<PlayerHealth1>();
+        playerHealth = GameObject.Find("player").GetComponentInChildren<PlayerHealth1>();
         enemyHealth = GetComponent<EnemyHealth1>();
         anim = GetComponent<Animator>();
     }
@@ -51,17 +51,17 @@ public class EnemyAttack : MonoBehaviour
     void Update()
     {
         // Add the time since Update was last called to the timer.
-        timer += Time.deltaTime;
+        //timer += Time.deltaTime;
 
         // If the timer exceeds the time between attacks, the player is in range and this enemy is alive...
-        if (timer >= timeBetweenAttacks && playerInRange && enemyHealth.currentHealth > 0)
+        if (timer >= timeBetweenAttacks && playerInRange && enemyHealth.enemy_current_health > 0)
         {
             // ... attack.
             Attack();
         }
 
         // If the player has zero or less health...
-        if (playerHealth.currentHealth <= 0)
+        if (playerHealth.player_current_health <= 0)
         {
             // ... tell the animator the player is dead.
             anim.SetTrigger("PlayerDead");
@@ -72,13 +72,13 @@ public class EnemyAttack : MonoBehaviour
     void Attack()
     {
         // Reset the timer.
-        timer = 0f;
+        //timer = 0f;
 
         // If the player has health to lose...
-        if (playerHealth.currentHealth > 0)
+        if (playerHealth.player_current_health > 0)
         {
             // ... damage the player.
-            playerHealth.TakeDamage(attackDamage);
+            playerHealth.adjustcurrenthealth(attackDamage);
         }
     }
 }
