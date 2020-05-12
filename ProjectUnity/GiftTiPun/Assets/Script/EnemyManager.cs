@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class NewBehaviourScript : MonoBehaviour
+public class EnemyManager : MonoBehaviour
 {
     PlayerHealth1 playerHealth;       // Reference to the player's heatlh.
     public GameObject enemy;                // The enemy prefab to be spawned.
@@ -19,7 +19,7 @@ public class NewBehaviourScript : MonoBehaviour
     void Spawn()
     {
         // If the player has no health left...
-        if (playerHealth.currentHealth <= 0f)
+        if (playerHealth.player_current_health <= 0f)
         {
             // ... exit the function.
             return;
