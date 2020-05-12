@@ -11,7 +11,7 @@ public class PlayerAttack : MonoBehaviour
     
 
 
-    private void OnTriggerEnter(Collider other)
+    private void OnCollisionStay(Collider other)
     {
         if (other.gameObject.tag == "enemy")
         {
@@ -37,6 +37,7 @@ public class PlayerAttack : MonoBehaviour
         if (Input.GetMouseButtonDown(0))
         {
             Attack();
+            
         }
     }
     
