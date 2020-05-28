@@ -26,7 +26,7 @@ public class PlayerHealth1 : MonoBehaviour
             player_max_health = 1;
         }
     }
-
+    //คอมเม้นไรดี
     void Update()
     {
         adjustcurrenthealth(0);
