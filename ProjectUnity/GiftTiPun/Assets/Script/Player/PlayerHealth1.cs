@@ -5,9 +5,15 @@ using UnityEngine;
 public class PlayerHealth1 : MonoBehaviour
 {
     public float player_max_health = 100;
-    public float player_current_health = 100;
+    public float player_current_health;
     public GameObject body;
+    public HpBar healthBar;
 
+    private void Start()
+    {
+        player_current_health = player_max_health;
+        healthBar.SetMaxHealth(player_max_health);
+    }
     public void adjustcurrenthealth(float adj)
     {
         player_current_health += adj;
@@ -26,6 +32,7 @@ public class PlayerHealth1 : MonoBehaviour
     //คอมเม้นไรดี
     void Update()
     {
+        healthBar.SetHealth(player_current_health);
         adjustcurrenthealth(0);
     }
 

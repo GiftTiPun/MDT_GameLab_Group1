@@ -5,19 +5,23 @@ using UnityEngine.UI;
 
 public class HpBar : MonoBehaviour
 {
-    public Image Bar;
-    public float fill;    
 
-    // Start is called before the first frame update
-    void Start()
-    {              
-        fill = 1f;
-    }
+	public Slider slider;
+	public Gradient gradient;
+	public Image fill;
 
-    // Update is called once per frame
-    void Update()
-    {
-        fill -= Time.deltaTime * 0.1f;
-        Bar.fillAmount = fill;
-    }
+	public void SetMaxHealth(float health)
+	{
+		slider.maxValue = health;
+		slider.value = health;
+		fill.color = gradient.Evaluate(1f);
+	}
+
+	public void SetHealth(float health)
+	{
+		slider.value = health;
+
+		fill.color = gradient.Evaluate(slider.normalizedValue);
+	}
+
 }
