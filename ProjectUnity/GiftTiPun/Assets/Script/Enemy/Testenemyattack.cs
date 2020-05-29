@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Testenemyattack : MonoBehaviour
 {
-    public int hitCount = -5; //number of hits
+    public float hitCount = -5f; //number of hits
     // Start is called before the first frame update
     void Start()
     {
