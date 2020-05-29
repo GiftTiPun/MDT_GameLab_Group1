@@ -6,7 +6,7 @@ public class EnemyAttack : MonoBehaviour
 {
     // Start is called before the first frame update
     public float timeBetweenAttacks = 0.5f;     // The time in seconds between each attack.
-    public int attackDamage = -10;
+    public float attackDamage = -10;
 
     Animator anim;                              // Reference to the animator component.
     GameObject player;                          // Reference to the player GameObject.

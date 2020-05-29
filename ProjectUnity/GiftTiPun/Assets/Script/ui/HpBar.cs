@@ -7,6 +7,7 @@ public class HpBar : MonoBehaviour
 {
     public Image Bar;
     public float fill;    
+
     // Start is called before the first frame update
     void Start()
     {              
