@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerHealth1 : MonoBehaviour
 {
@@ -8,7 +9,7 @@ public class PlayerHealth1 : MonoBehaviour
     public float player_current_health;
     public GameObject body;
     public HpBar healthBar;
-
+    
     private void Start()
     {
         player_current_health = player_max_health;
@@ -21,6 +22,7 @@ public class PlayerHealth1 : MonoBehaviour
         if (player_current_health <= 0)
         {
             player_current_health = 0;
+            changescene("GameOver");
            
         }
         if (player_current_health > player_max_health)
@@ -28,6 +30,10 @@ public class PlayerHealth1 : MonoBehaviour
             player_current_health = player_max_health;
         }
      
+    }
+    public void changescene(string scene)
+    {
+        SceneManager.LoadScene(scene);
     }
     //คอมเม้นไรดี
     void Update()
