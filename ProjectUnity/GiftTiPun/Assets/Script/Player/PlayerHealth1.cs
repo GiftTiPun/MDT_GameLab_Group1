@@ -22,7 +22,7 @@ public class PlayerHealth1 : MonoBehaviour
         if (player_current_health <= 0)
         {
             player_current_health = 0;
-            changescene("GameOver");
+            
            
         }
         if (player_current_health > player_max_health)
@@ -40,6 +40,10 @@ public class PlayerHealth1 : MonoBehaviour
     {
         healthBar.SetHealth(player_current_health);
         adjustcurrenthealth(0);
+        if (player_current_health <= 0)
+        {
+            changescene("GameOver");
+        }
     }
 
 }
