@@ -4,33 +4,42 @@ using UnityEngine;
 
 public class Testenemyattack : MonoBehaviour
 {
-    public float hitCount = -5f; //number of hits
-    // Start is called before the first frame update
+    public float damage = -5f;
+    public float Cooldown;
+    public float TimetoAtk = 0f;
+    
     void Start()
     {
-        
+        TimetoAtk = Cooldown;
     }
-    /*void attack()
-    {
-        RaycastHit hit;
-        if (Physics.Raycast(transform.position, transform.forward, out hit))
-        {
-            if (hit.collider.gameObject.tag == "Player")
-            {
-                hit.collider.gameObject.GetComponent<PlayerHealth1>().player_current_health -= 5f;
-            }
-        }
-    }*/
+  
     void OnTriggerStay(Collider other)
     {
-        if (other.gameObject.tag == "Player")
+        
+        if (other.gameObject.tag == "Player" )
         {
-            PlayerHealth1 Phealth = other.gameObject.GetComponent<PlayerHealth1>();
-            Phealth.adjustcurrenthealth(hitCount);
-
+            if (TimetoAtk < 0f)
+            {
+                TimetoAtk = 0f;
+            }
+            if (TimetoAtk == 0f)
+            {
+                PlayerHealth1 Phealth = other.gameObject.GetComponent<PlayerHealth1>();
+                Phealth.adjustcurrenthealth(damage);
+                TimetoAtk = Cooldown;
+            }
+            if (TimetoAtk > 0f)
+            {
+                TimetoAtk -= Time.deltaTime;
+            }
         }
+        
     }
-    // Update is called once per frame
+    private void OnTriggerExit(Collider other)
+    {
+        TimetoAtk = Cooldown;
+    }
+    
     void Update()
     {
         
