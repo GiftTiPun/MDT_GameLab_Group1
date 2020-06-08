@@ -24,7 +24,7 @@ public class Testenemyattack : MonoBehaviour
             }
             if (TimetoAtk == 0f)
             {
-                PlayerHealth1 Phealth = other.gameObject.GetComponent<PlayerHealth1>();
+                PlayerHealth1 Phealth = GameObject.Find("player").GetComponent<PlayerHealth1>();
                 Phealth.adjustcurrenthealth(damage);
                 TimetoAtk = Cooldown;
             }
