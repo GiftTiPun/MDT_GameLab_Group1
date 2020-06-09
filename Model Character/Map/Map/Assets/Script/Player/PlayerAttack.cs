@@ -5,37 +5,47 @@ using UnityEngine;
 public class PlayerAttack : MonoBehaviour
 {
     public float attack_Power = -10f;
-    public float TimebetweenAttack = 0.5f;
-    GameObject target;
+    public float TimetoAtk = 0.0f;
+    public float Cooldown = 0.5f;
+    
 
     private void OnTriggerStay(Collider other)
     {
+
         if (other.gameObject.tag == "enemy" && Input.GetMouseButtonDown(0))
-        {
-            EnemyHealth1 Ehealth = other.gameObject.GetComponent<EnemyHealth1>();
-            Ehealth.adjustcurrenthealth(attack_Power);
+        { 
+            if (TimetoAtk < 0f)
+            {
+                TimetoAtk = 0f;
+            }
+            if (TimetoAtk == 0f)
+            {
+                EnemyHealth1 Ehealth = other.gameObject.GetComponent<EnemyHealth1>();
+                Ehealth.adjustcurrenthealth(attack_Power);
+                TimetoAtk = Cooldown;
+            }
+            if (TimetoAtk > 0f)
+            {
+                TimetoAtk -= Time.deltaTime;
+            }
+            
 
         }
     }
     
    
-    private void Attack()
-    {
-        Debug.Log("Attack");
-        
-    }
+  
 
     private void Start()
     {
-        target = GameObject.FindWithTag("enemy");
         
     }
     void Update()
     {
         if (Input.GetMouseButtonDown(0))
         {
-            Attack();
-            
+            Debug.Log("Attack");
+
         }
     }
     

@@ -7,7 +7,6 @@ public class PlayerHealth1 : MonoBehaviour
 {
     public float player_max_health = 100;
     public float player_current_health;
-    public GameObject body;
     public HpBar healthBar;
     
     private void Start()
