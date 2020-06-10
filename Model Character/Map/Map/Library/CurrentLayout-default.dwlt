@@ -103,7 +103,7 @@ MonoBehaviour:
   m_MinSize: {x: 711, y: 472}
   m_MaxSize: {x: 18006, y: 14022}
   vertical: 0
-  controlID: 101
+  controlID: 30
 --- !u!114 &5
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -153,7 +153,7 @@ MonoBehaviour:
     y: 0
     width: 1536
     height: 781
-  m_MinSize: {x: 950, y: 522}
+  m_MinSize: {x: 950, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
 --- !u!114 &7
 MonoBehaviour:
@@ -340,19 +340,19 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Script/item
+    - Assets/Scenes
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Script/item
+  - Assets/Scenes
   m_LastFoldersGridSize: -1
   m_LastProjectPath: D:\kmutt work\unitylab\Project Group1\Model Character\Map\Map
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 63}
-    m_SelectedIDs: fc3e0000
-    m_LastClickedID: 16124
+    m_SelectedIDs: e6460000
+    m_LastClickedID: 18150
     m_ExpandedIDs: 00000000fc330000d2360000b038000076410000b6410000144200009044000030470000e84700005e4800003a4900004849000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -381,7 +381,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000fc330000d2360000b038000076410000b6410000144200009044000030470000e84700005e4800003a49000048490000
+    m_ExpandedIDs: 00000000fc330000d2360000b038000076410000b64100001442000030470000e84700005e4800003a49000048490000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -503,21 +503,21 @@ MonoBehaviour:
   m_ViewDataDictionary: {fileID: 0}
   m_SceneHierarchy:
     m_TreeViewState:
-      scrollPos: {x: 0, y: 80}
-      m_SelectedIDs: 024f0000
-      m_LastClickedID: 20226
-      m_ExpandedIDs: 12f1ffff6efbffff
+      scrollPos: {x: 0, y: 97}
+      m_SelectedIDs: 66630000d46400009662000026640000a66000005c630000566300007c5f00003e610000426400000e630000945f00008e6100004c610000ca620000ca5f00001e6100004a5f0000de630000405f00003a5f0000c45f0000b862000072640000bc610000e2600000306200008a5f0000666100007863000070600000d8630000725f00004c640000006400001e630000ba640000d0610000126200008c6200005e600000f6620000b2610000ac610000c4600000
+      m_LastClickedID: 24772
+      m_ExpandedIDs: 78c8ffff1ae6ffff64e6ffff24e9ffff82e9ffffaee9ffff6efbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
-        m_Name: Wall31
-        m_OriginalName: Wall31
+        m_Name: Canvas
+        m_OriginalName: Canvas
         m_EditFieldRect:
           serializedVersion: 2
           x: 0
           y: 0
           width: 0
           height: 0
-        m_UserData: -48352
+        m_UserData: -5758
         m_IsWaitingForDelay: 0
         m_IsRenaming: 0
         m_OriginalEventType: 0
@@ -566,9 +566,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 40.799873, y: 6.1501694, z: 69.38956}
+    m_Target: {x: 80.00873, y: -40.804688, z: 87.96747}
     speed: 2
-    m_Value: {x: 40.799873, y: 6.1501694, z: 69.38956}
+    m_Value: {x: 80.00873, y: -40.804688, z: 87.96747}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -597,13 +597,13 @@ MonoBehaviour:
       speed: 2
       m_Value: 0
   m_Rotation:
-    m_Target: {x: -0.07530041, y: -0.6352845, z: 0.06173295, w: -0.7664865}
+    m_Target: {x: 0.51525617, y: 0.43877083, z: -0.3476174, w: 0.64940155}
     speed: 2
-    m_Value: {x: -0.075371474, y: -0.6339537, z: 0.061602406, w: -0.76722026}
+    m_Value: {x: 0.5126405, y: 0.44066307, z: -0.34696937, w: 0.6500985}
   m_Size:
-    m_Target: 2.5088758
+    m_Target: 244.4535
     speed: 2
-    m_Value: -2.5088758
+    m_Value: 255.97226
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -652,7 +652,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 73.6
-    width: 896
+    width: 944
     height: 712
   m_ViewDataDictionary: {fileID: 0}
   m_VSyncEnabled: 0
@@ -666,8 +666,8 @@ MonoBehaviour:
     m_VRangeLocked: 0
     hZoomLockedByDefault: 0
     vZoomLockedByDefault: 0
-    m_HBaseRangeMin: -358.4
-    m_HBaseRangeMax: 358.4
+    m_HBaseRangeMin: -377.6
+    m_HBaseRangeMax: 377.6
     m_VBaseRangeMin: -278
     m_VBaseRangeMax: 278
     m_HAllowExceedBaseRangeMin: 1
@@ -687,25 +687,25 @@ MonoBehaviour:
       serializedVersion: 2
       x: 0
       y: 17
-      width: 896
+      width: 944
       height: 695
     m_Scale: {x: 1, y: 1}
-    m_Translation: {x: 448, y: 347.5}
+    m_Translation: {x: 472, y: 347.5}
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
     m_MarginBottom: 0
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
-      x: -448
+      x: -472
       y: -347.5
-      width: 896
+      width: 944
       height: 695
     m_MinimalGUI: 1
   m_defaultScale: 1
   m_TargetTexture: {fileID: 0}
   m_CurrentColorSpace: 0
-  m_LastWindowPixelSize: {x: 1120, y: 890}
+  m_LastWindowPixelSize: {x: 1180, y: 890}
   m_ClearInEditMode: 1
   m_NoCameraWarning: 1
   m_LowResolutionForAspectRatios: 01000000000000000000
@@ -735,29 +735,4 @@ MonoBehaviour:
     y: 412
     width: 234
     height: 373
-  m_ViewDataDictionary: {fileID: 0}
---- !u!114 &19
-MonoBehaviour:
-  m_ObjectHideFlags: 52
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 12059, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: 
-  m_EditorClassIdentifier: UnityEditor:UnityEditor.Experimental.TerrainAPI:PaintTextureTool
-  m_MinSize: {x: 100, y: 100}
-  m_MaxSize: {x: 4000, y: 4000}
-  m_TitleContent:
-    m_Text: Failed to load
-    m_Image: {fileID: 0}
-    m_Tooltip: 
-  m_Pos:
-    serializedVersion: 2
-    x: 0
-    y: 0
-    width: 320
-    height: 550
   m_ViewDataDictionary: {fileID: 0}
