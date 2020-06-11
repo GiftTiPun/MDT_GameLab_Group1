@@ -6,6 +6,7 @@ public class createWall : MonoBehaviour
 {
     public GameObject createwall;
     public GameObject wallmodel;
+    public float totalscore;
     private void OnTriggerEnter(Collider other)
     {
         if(other.gameObject.tag == "Player")
@@ -17,7 +18,7 @@ public class createWall : MonoBehaviour
     {
         Score score = GameObject.Find("player").GetComponent<Score>();
         //to use find gameobject that contain score of each level and change statement in if to number of enemy in each level
-        if (score.score >= 4f)
+        if (score.score >= totalscore)
         {
             Destroy(wallmodel);
             Destroy(createwall);

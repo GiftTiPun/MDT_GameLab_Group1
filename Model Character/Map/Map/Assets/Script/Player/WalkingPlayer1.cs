@@ -37,6 +37,14 @@ public class WalkingPlayer1 : MonoBehaviour
         {
             transform.position += transform.TransformDirection(Vector3.up) * 2 * Time.deltaTime * SpeedMovement;
         }
+        if (Input.GetKey(KeyCode.LeftShift))
+        {
+            SpeedMovement = 7f;
+        }
+        else
+        {
+            SpeedMovement = 3f;
+        }
         Quaternion rotate = Quaternion.Euler(0, cameramain.transform.rotation.eulerAngles.y-90, 0);
         transform.rotation = rotate;
 

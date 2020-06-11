@@ -11,34 +11,33 @@ public class PlayerAttack : MonoBehaviour
 
     private void OnTriggerStay(Collider other)
     {
-
+        if (TimetoAtk < 0f)
+        {
+            TimetoAtk = 0f;
+        }
+        if (TimetoAtk > 0f)
+        {
+            TimetoAtk -= Time.deltaTime;
+        }
         if (other.gameObject.tag == "enemy" && Input.GetMouseButtonDown(0))
         { 
-            if (TimetoAtk < 0f)
-            {
-                TimetoAtk = 0f;
-            }
+            
             if (TimetoAtk == 0f)
             {
                 EnemyHealth1 Ehealth = other.gameObject.GetComponent<EnemyHealth1>();
                 Ehealth.adjustcurrenthealth(attack_Power);
                 TimetoAtk = Cooldown;
             }
-            if (TimetoAtk > 0f)
-            {
-                TimetoAtk -= Time.deltaTime;
-            }
-            
-
         }
+        
     }
     
    
   
 
-    private void Start()
+    void Start()
     {
-        
+        TimetoAtk = Cooldown;
     }
     void Update()
     {

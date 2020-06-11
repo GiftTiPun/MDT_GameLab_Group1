@@ -12,7 +12,7 @@ public class Potion : MonoBehaviour
         if(other.gameObject.tag == "Player")
         {
             PlayerHealth1 PHealth = GameObject.Find("player").GetComponent<PlayerHealth1>();
-            PHealth.adjustcurrenthealth(10f);
+            PHealth.adjustcurrenthealth(20f);
             Destroy(body);
         }
     }
