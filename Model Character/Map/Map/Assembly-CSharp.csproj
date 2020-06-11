@@ -106,9 +106,7 @@
     <Compile Include="Assets\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Scripts\VignetteAndChromaticAberration.cs" />
     <Compile Include="Assets\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Scripts\Vortex.cs" />
     <Compile Include="Assets\Script\Enemy\EnemyAi.cs" />
-    <Compile Include="Assets\Script\Enemy\EnemyAttack.cs" />
     <Compile Include="Assets\Script\Enemy\EnemyHealth1.cs" />
-    <Compile Include="Assets\Script\Enemy\EnemyManager.cs" />
     <Compile Include="Assets\Script\Enemy\Testenemyattack.cs" />
     <Compile Include="Assets\Script\item\createWall.cs" />
     <Compile Include="Assets\Script\item\Potion.cs" />
