@@ -2716,7 +2716,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 066587b93ad15214f96b703733b05ea4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 0}
+  player: {fileID: 1220840252}
   activeDist: 0
   spawn: {fileID: 0}
 --- !u!195 &236049348
@@ -2905,7 +2905,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 066587b93ad15214f96b703733b05ea4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 0}
+  player: {fileID: 1220840252}
   activeDist: 0
   spawn: {fileID: 0}
 --- !u!195 &236931353
@@ -4229,7 +4229,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 066587b93ad15214f96b703733b05ea4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 0}
+  player: {fileID: 1220840252}
   activeDist: 0
   spawn: {fileID: 0}
 --- !u!195 &359738470
@@ -6595,7 +6595,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 066587b93ad15214f96b703733b05ea4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 0}
+  player: {fileID: 1220840252}
   activeDist: 0
   spawn: {fileID: 0}
 --- !u!195 &532254183
@@ -8718,7 +8718,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 6.42e-43, y: 0, z: 0, w: 629334.5}
+  m_BoundingSphereOverride: {x: 0, y: 8e-45, z: 3.003e-42, w: 1.02e-43}
   m_UseBoundingSphereOverride: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
@@ -10413,7 +10413,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 066587b93ad15214f96b703733b05ea4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 0}
+  player: {fileID: 1220840252}
   activeDist: 0
   spawn: {fileID: 0}
 --- !u!1001 &879008859
