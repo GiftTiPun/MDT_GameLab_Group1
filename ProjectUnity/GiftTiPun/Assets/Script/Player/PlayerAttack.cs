@@ -7,6 +7,7 @@ public class PlayerAttack : MonoBehaviour
     public float attack_Power = -10f;
     public float TimebetweenAttack = 0.5f;
     GameObject target;
+    Renderer rend;
 
     private void OnTriggerStay(Collider other)
     {
@@ -22,7 +23,8 @@ public class PlayerAttack : MonoBehaviour
     private void Attack()
     {
         Debug.Log("Attack");
-        
+        rend = GetComponent<Renderer>();
+        rend.enabled = true;
     }
 
     private void Start()
@@ -35,7 +37,10 @@ public class PlayerAttack : MonoBehaviour
         if (Input.GetMouseButtonDown(0))
         {
             Attack();
-            
+            AudioSource audio = GetComponent<AudioSource>();
+            audio.Play();
+            rend.enabled = false;
+
         }
     }
     
