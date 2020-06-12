@@ -112,6 +112,7 @@
     <Compile Include="Assets\Script\item\Potion.cs" />
     <Compile Include="Assets\Script\item\Score.cs" />
     <Compile Include="Assets\Script\Player\camerarotation1.cs" />
+    <Compile Include="Assets\Script\Player\Cusor.cs" />
     <Compile Include="Assets\Script\Player\PlayerAttack.cs" />
     <Compile Include="Assets\Script\Player\PlayerHealth1.cs" />
     <Compile Include="Assets\Script\Player\WalkingPlayer1.cs" />

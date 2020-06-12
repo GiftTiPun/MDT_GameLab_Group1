@@ -34,13 +34,14 @@ public class PlayerHealth1 : MonoBehaviour
     {
         SceneManager.LoadScene(scene);
     }
-    //คอมเม้นไรดี
     void Update()
     {
         healthBar.SetHealth(player_current_health);
         adjustcurrenthealth(0);
         if (player_current_health <= 0)
         {
+            Cursor.lockState = CursorLockMode.Confined;
+            Cursor.visible = true;
             changescene("GameOver");
         }
     }

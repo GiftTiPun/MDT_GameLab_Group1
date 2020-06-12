@@ -10,7 +10,7 @@ public class camerarotation1 : MonoBehaviour
     private float Y = 0.0f;
     void Start()
     {
-        
+            
     }
 
     // Update is called once per frame
@@ -20,6 +20,7 @@ public class camerarotation1 : MonoBehaviour
         Y -= speedV * Input.GetAxis("Mouse Y");
 
         transform.eulerAngles = new Vector3(Y, X, 0.0f);
+
 
     }
 }
