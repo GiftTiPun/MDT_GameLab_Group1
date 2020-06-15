@@ -8,16 +8,23 @@ public class keep : MonoBehaviour
     //public bool starter;
     //public bool monzone;
     public AudioSource monfight;
+    //public AudioSource bgm;
     //public AudioClip bgm;
     //public AudioClip fight;
+    public GameObject player;
 
 
     // Start is called before the first frame update
     void Start()
     {
-        //starter = true;
-        //monzone = false;
         monfight = GetComponent<AudioSource>();
-        monfight.Play();
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.tag == "Player")
+        {
+            monfight.Play();
+        }
     }
 }
