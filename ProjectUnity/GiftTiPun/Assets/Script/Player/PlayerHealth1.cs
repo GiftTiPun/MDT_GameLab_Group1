@@ -9,11 +9,13 @@ public class PlayerHealth1 : MonoBehaviour
     public float player_current_health;
     public GameObject body;
     public HpBar healthBar;
+   
     
     private void Start()
     {
         player_current_health = player_max_health;
         healthBar.SetMaxHealth(player_max_health);
+        
     }
     public void adjustcurrenthealth(float adj)
     {
