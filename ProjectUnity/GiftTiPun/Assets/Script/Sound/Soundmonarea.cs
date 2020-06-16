@@ -4,20 +4,24 @@ using UnityEngine;
 
 public class Soundmonarea : MonoBehaviour
 {
-    Renderer rend;
-    GameObject player;
     // Start is called before the first frame update
     void Start()
     {
-        rend = GetComponent<Renderer>();
-        rend.enabled = true;
+        
     }
 
     // Update is called once per frame
-    private void OnTriggerEnter(Collider player)
+    private void OnTriggerEnter(Collider other)
     {
-        AudioSource audio = GetComponent<AudioSource>();
-        audio.Play();
-        rend.enabled = false;
+        if (other.gameObject.tag == "Player"& soundtest.back ==0)
+        {
+            keep.monfight.volume = 0.1f;
+            soundtest.BGM.volume = 1.5f;
+            soundtest.back = 5;
+        }
+        if (keep.monfight.volume == 0.1f)
+        {
+            keep.monfight.volume = 0f;
+        }
     }
 }

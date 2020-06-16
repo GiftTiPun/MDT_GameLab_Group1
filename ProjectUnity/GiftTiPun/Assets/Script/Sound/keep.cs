@@ -7,7 +7,7 @@ public class keep : MonoBehaviour
 {
     //public bool starter;
     //public bool monzone;
-    public AudioSource monfight;
+    public static AudioSource monfight;
     //public AudioSource bgm;
     //public AudioClip bgm;
     //public AudioClip fight;
@@ -25,6 +25,9 @@ public class keep : MonoBehaviour
         if (other.gameObject.tag == "Player")
         {
             monfight.Play();
+            monfight.volume = 0.1f;
+            soundtest.BGM.volume = 0f;
+            soundtest.back = 0;
         }
     }
 }

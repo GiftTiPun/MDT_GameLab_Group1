@@ -23,9 +23,7 @@ public class PlayerHealth1 : MonoBehaviour
 
         if (player_current_health <= 0)
         {
-            player_current_health = 0;
-            
-           
+            player_current_health = 0;                      
         }
         if (player_current_health > player_max_health)
         {

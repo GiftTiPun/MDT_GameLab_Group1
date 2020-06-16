@@ -8,8 +8,8 @@ public class soundtest : MonoBehaviour
     //public bool starter;
     //public bool monzone;
     //Renderer sound;
-    public AudioSource BGM;
-    public AudioSource fight;
+    public static AudioSource BGM;
+    public static float back = 5;
 
 
     //public AudioClip bgm;
@@ -23,7 +23,6 @@ public class soundtest : MonoBehaviour
         //monzone = false;
         //sound = GetComponent<Renderer>();
         //sound.enabled = true;
-        fight = GetComponent<AudioSource>();
         BGM = GetComponent<AudioSource>();
         BGM.Play();
     }
