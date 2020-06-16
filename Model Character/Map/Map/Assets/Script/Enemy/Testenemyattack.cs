@@ -7,10 +7,11 @@ public class Testenemyattack : MonoBehaviour
     public float damage = -5f;
     public float Cooldown;
     public float TimetoAtk = 0f;
-    
+    public AudioSource hit;
     void Start()
     {
         TimetoAtk = Cooldown;
+        hit = GetComponent<AudioSource>();
     }
   
     void OnTriggerStay(Collider other)
@@ -26,6 +27,8 @@ public class Testenemyattack : MonoBehaviour
             {
                 PlayerHealth1 Phealth = GameObject.Find("player").GetComponent<PlayerHealth1>();
                 Phealth.adjustcurrenthealth(damage);
+                hit.volume = 0.1f;
+                hit.Play();
                 TimetoAtk = Cooldown;
             }
             if (TimetoAtk > 0f)

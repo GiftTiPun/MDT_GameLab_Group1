@@ -7,10 +7,13 @@ public class PlayerAttack : MonoBehaviour
     public float attack_Power = -10f;
     public float TimetoAtk = 0.0f;
     public float Cooldown = 0.5f;
+
+    Renderer rend;
     
 
     private void OnTriggerStay(Collider other)
     {
+
         if (TimetoAtk < 0f)
         {
             TimetoAtk = 0f;
@@ -38,12 +41,17 @@ public class PlayerAttack : MonoBehaviour
     void Start()
     {
         TimetoAtk = Cooldown;
+        rend = GetComponent<Renderer>();
+        rend.enabled = true;
     }
     void Update()
     {
         if (Input.GetMouseButtonDown(0))
         {
             Debug.Log("Attack");
+            AudioSource audio = GetComponent<AudioSource>();
+            audio.Play();
+            rend.enabled = false;
 
         }
     }
