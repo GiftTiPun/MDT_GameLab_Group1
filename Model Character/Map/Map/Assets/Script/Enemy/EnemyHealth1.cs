@@ -12,6 +12,7 @@ public class EnemyHealth1 : MonoBehaviour
     public GameObject body;
     public GameObject healthbarE;
     public Slider slider;
+   
 
 
     public void adjustcurrenthealth(float adj)
@@ -22,6 +23,7 @@ public class EnemyHealth1 : MonoBehaviour
         if (enemy_current_health <= 0)
         {
             enemy_current_health = 0;
+            
             Destroy(body);
             addscore.score++;
 
@@ -39,7 +41,9 @@ public class EnemyHealth1 : MonoBehaviour
     private void Start()
     {
         enemy_current_health = enemy_max_health;
+        
         slider.value = CalculateHealth();
+        
     }
     void Update()
     {

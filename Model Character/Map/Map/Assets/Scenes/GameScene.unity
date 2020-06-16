@@ -2011,6 +2011,7 @@ MonoBehaviour:
   Cooldown: 0.5
   TimetoAtk: 5
   hit: {fileID: 0}
+  body: {fileID: 0}
 --- !u!65 &118816220
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2262,12 +2263,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 132925640}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 066587b93ad15214f96b703733b05ea4, type: 3}
+  m_Script: {fileID: 11500000, guid: dab9738be2b4bf94781fcef4ff162349, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 1220840252}
   activeDist: 4
   spawn: {fileID: 700575353}
+  body: {fileID: 132925640}
 --- !u!65 &132925644
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2281,6 +2283,25 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.85252285, y: 0.8015593, z: 0.9114591}
   m_Center: {x: 0.015551849, y: 0.5271273, z: -0.044270515}
+--- !u!95 &132925647
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 132925640}
+  m_Enabled: 1
+  m_Avatar: {fileID: 9000000, guid: 1db38da97b6ad094dbca967f13dd370f, type: 3}
+  m_Controller: {fileID: 9100000, guid: 478ec5e3141f6a04b992495092a18c6d, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &136001300
 GameObject:
   m_ObjectHideFlags: 0
@@ -3299,8 +3320,8 @@ GameObject:
   m_Component:
   - component: {fileID: 227412436}
   - component: {fileID: 227412438}
-  - component: {fileID: 227412437}
   - component: {fileID: 227412439}
+  - component: {fileID: 227412437}
   m_Layer: 0
   m_Name: attackstone1
   m_TagString: Untagged
@@ -3331,13 +3352,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 227412435}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e7967bbf37e06d641ba7424679750147, type: 3}
+  m_Script: {fileID: 11500000, guid: a90869bdcd5c5d146b755367e71352d2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   damage: -5
   Cooldown: 0.5
   TimetoAtk: 5
   hit: {fileID: 0}
+  body: {fileID: 490408393}
 --- !u!136 &227412438
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -3556,6 +3578,7 @@ MonoBehaviour:
   player: {fileID: 1220840252}
   activeDist: 3
   spawn: {fileID: 126896128}
+  body: {fileID: 236049344}
 --- !u!195 &236049348
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -3736,6 +3759,7 @@ MonoBehaviour:
   player: {fileID: 1220840252}
   activeDist: 3
   spawn: {fileID: 1553275126}
+  body: {fileID: 236931349}
 --- !u!195 &236931353
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -4666,6 +4690,7 @@ MonoBehaviour:
   Cooldown: 1
   TimetoAtk: 10
   hit: {fileID: 0}
+  body: {fileID: 0}
 --- !u!136 &312837914
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -5097,12 +5122,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 321370910}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 066587b93ad15214f96b703733b05ea4, type: 3}
+  m_Script: {fileID: 11500000, guid: dab9738be2b4bf94781fcef4ff162349, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 1220840252}
   activeDist: 4
   spawn: {fileID: 543685464}
+  body: {fileID: 321370910}
 --- !u!65 &321370914
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5116,6 +5142,25 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.8525229, y: 0.8015593, z: 0.9114591}
   m_Center: {x: 0, y: 0.5271273, z: 0}
+--- !u!95 &321370917
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 321370910}
+  m_Enabled: 1
+  m_Avatar: {fileID: 9000000, guid: 1db38da97b6ad094dbca967f13dd370f, type: 3}
+  m_Controller: {fileID: 9100000, guid: 478ec5e3141f6a04b992495092a18c6d, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &334524778 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1000012006197310, guid: 465c505844950da499dcf096a6da4409,
@@ -5286,6 +5331,7 @@ MonoBehaviour:
   player: {fileID: 1220840252}
   activeDist: 3
   spawn: {fileID: 1562649869}
+  body: {fileID: 359738466}
 --- !u!195 &359738470
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -7834,6 +7880,26 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 111495423891279680, guid: 0f8a471e5537f864ebdb454fe82308eb,
+        type: 3}
+      propertyPath: m_Animations.Array.size
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 111495423891279680, guid: 0f8a471e5537f864ebdb454fe82308eb,
+        type: 3}
+      propertyPath: m_Animations.Array.data[5]
+      value: 
+      objectReference: {fileID: 7400000, guid: 3e63abeab47efea44a9868d7d769abcf, type: 3}
+    - target: {fileID: 111495423891279680, guid: 0f8a471e5537f864ebdb454fe82308eb,
+        type: 3}
+      propertyPath: m_PlayAutomatically
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 111495423891279680, guid: 0f8a471e5537f864ebdb454fe82308eb,
+        type: 3}
+      propertyPath: m_AnimatePhysics
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0f8a471e5537f864ebdb454fe82308eb, type: 3}
 --- !u!1 &490408393 stripped
@@ -7879,12 +7945,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 490408393}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 066587b93ad15214f96b703733b05ea4, type: 3}
+  m_Script: {fileID: 11500000, guid: dab9738be2b4bf94781fcef4ff162349, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 1220840252}
   activeDist: 4
   spawn: {fileID: 551065861}
+  body: {fileID: 490408393}
 --- !u!65 &490408397
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7898,6 +7965,25 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.8525229, y: 0.8015593, z: 0.9114591}
   m_Center: {x: 0, y: 0.5271273, z: 0}
+--- !u!95 &490408400
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 490408393}
+  m_Enabled: 1
+  m_Avatar: {fileID: 9000000, guid: 1db38da97b6ad094dbca967f13dd370f, type: 3}
+  m_Controller: {fileID: 9100000, guid: 478ec5e3141f6a04b992495092a18c6d, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1001 &490481769
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8370,6 +8456,7 @@ MonoBehaviour:
   player: {fileID: 1220840252}
   activeDist: 3
   spawn: {fileID: 1909105312}
+  body: {fileID: 532254179}
 --- !u!195 &532254183
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -8907,6 +8994,7 @@ MonoBehaviour:
   player: {fileID: 1220840252}
   activeDist: 5
   spawn: {fileID: 1661086122}
+  body: {fileID: 0}
 --- !u!65 &554604352
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -9906,6 +9994,7 @@ MonoBehaviour:
   player: {fileID: 1220840252}
   activeDist: 5
   spawn: {fileID: 444147430}
+  body: {fileID: 0}
 --- !u!65 &609187337
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -11100,7 +11189,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 0.03125, y: 0.09765625, z: 0.0234375, w: -0.02734375}
+  m_BoundingSphereOverride: {x: 4.359798e+27, y: 947942.56, z: 1.0230485e-38, w: 6.69867e+31}
   m_UseBoundingSphereOverride: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
@@ -11499,6 +11588,7 @@ MonoBehaviour:
   Cooldown: 1
   TimetoAtk: 5
   hit: {fileID: 715435923}
+  body: {fileID: 532254179}
 --- !u!136 &715435922
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -12188,6 +12278,7 @@ MonoBehaviour:
   Cooldown: 0.5
   TimetoAtk: 5
   hit: {fileID: 0}
+  body: {fileID: 0}
 --- !u!136 &782810953
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -13005,6 +13096,7 @@ MonoBehaviour:
   Cooldown: 0.5
   TimetoAtk: 5
   hit: {fileID: 0}
+  body: {fileID: 0}
 --- !u!136 &819507431
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -13675,6 +13767,7 @@ MonoBehaviour:
   player: {fileID: 1220840252}
   activeDist: 3
   spawn: {fileID: 1353169650}
+  body: {fileID: 875687299}
 --- !u!4 &875687305 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4892504893775866, guid: 57d78de69bcaf8a4e969c0c3350b859b,
@@ -14376,6 +14469,7 @@ MonoBehaviour:
   Cooldown: 1
   TimetoAtk: 5
   hit: {fileID: 1457219055}
+  body: {fileID: 236931349}
 --- !u!136 &897107244
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -15485,6 +15579,7 @@ MonoBehaviour:
   player: {fileID: 1220840252}
   activeDist: 3
   spawn: {fileID: 1260097026}
+  body: {fileID: 0}
 --- !u!65 &974114794
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -15609,6 +15704,7 @@ MonoBehaviour:
   Cooldown: 0.5
   TimetoAtk: 5
   hit: {fileID: 0}
+  body: {fileID: 0}
 --- !u!65 &988400953
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -16909,8 +17005,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1057324212}
   - component: {fileID: 1057324214}
-  - component: {fileID: 1057324213}
   - component: {fileID: 1057324215}
+  - component: {fileID: 1057324213}
   m_Layer: 0
   m_Name: attackstone2
   m_TagString: Untagged
@@ -16941,13 +17037,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 1057324211}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e7967bbf37e06d641ba7424679750147, type: 3}
+  m_Script: {fileID: 11500000, guid: a90869bdcd5c5d146b755367e71352d2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   damage: -5
   Cooldown: 0.5
   TimetoAtk: 5
   hit: {fileID: 0}
+  body: {fileID: 1477730567}
 --- !u!136 &1057324214
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -18702,8 +18799,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1202051456}
   - component: {fileID: 1202051458}
-  - component: {fileID: 1202051457}
   - component: {fileID: 1202051459}
+  - component: {fileID: 1202051457}
   m_Layer: 0
   m_Name: attackstone4
   m_TagString: Untagged
@@ -18734,13 +18831,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 1202051455}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e7967bbf37e06d641ba7424679750147, type: 3}
+  m_Script: {fileID: 11500000, guid: a90869bdcd5c5d146b755367e71352d2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   damage: -5
   Cooldown: 0.5
   TimetoAtk: 5
   hit: {fileID: 0}
+  body: {fileID: 2100344963}
 --- !u!136 &1202051458
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -20716,9 +20814,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1352996975}
-  - component: {fileID: 1352996977}
   - component: {fileID: 1352996976}
   - component: {fileID: 1352996978}
+  - component: {fileID: 1352996977}
   m_Layer: 0
   m_Name: attackstone3
   m_TagString: Untagged
@@ -20763,13 +20861,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 1352996974}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e7967bbf37e06d641ba7424679750147, type: 3}
+  m_Script: {fileID: 11500000, guid: a90869bdcd5c5d146b755367e71352d2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   damage: -5
   Cooldown: 0.5
   TimetoAtk: 5
   hit: {fileID: 0}
+  body: {fileID: 321370910}
 --- !u!82 &1352996978
 AudioSource:
   m_ObjectHideFlags: 0
@@ -21373,6 +21472,7 @@ MonoBehaviour:
   Cooldown: 1
   TimetoAtk: 10
   hit: {fileID: 0}
+  body: {fileID: 0}
 --- !u!65 &1402882198
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -21950,6 +22050,7 @@ MonoBehaviour:
   Cooldown: 1
   TimetoAtk: 5
   hit: {fileID: 0}
+  body: {fileID: 236049344}
 --- !u!136 &1448239133
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -22109,6 +22210,7 @@ MonoBehaviour:
   Cooldown: 1
   TimetoAtk: 5
   hit: {fileID: 1457219055}
+  body: {fileID: 875687299}
 --- !u!136 &1457219054
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -22587,12 +22689,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 1477730567}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 066587b93ad15214f96b703733b05ea4, type: 3}
+  m_Script: {fileID: 11500000, guid: dab9738be2b4bf94781fcef4ff162349, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 1220840252}
   activeDist: 4
   spawn: {fileID: 2122805324}
+  body: {fileID: 1477730567}
 --- !u!65 &1477730571
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -22606,6 +22709,25 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.8525229, y: 0.8015593, z: 0.9114591}
   m_Center: {x: 0, y: 0.5271273, z: 0}
+--- !u!95 &1477730574
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1477730567}
+  m_Enabled: 1
+  m_Avatar: {fileID: 9000000, guid: 1db38da97b6ad094dbca967f13dd370f, type: 3}
+  m_Controller: {fileID: 9100000, guid: 478ec5e3141f6a04b992495092a18c6d, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1001 &1478960373
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -23570,7 +23692,8 @@ MonoBehaviour:
   damage: -5
   Cooldown: 1
   TimetoAtk: 5
-  hit: {fileID: 0}
+  hit: {fileID: 1550920984}
+  body: {fileID: 359738466}
 --- !u!136 &1550920983
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -24284,6 +24407,7 @@ MonoBehaviour:
   player: {fileID: 1220840252}
   activeDist: 4
   spawn: {fileID: 287845232}
+  body: {fileID: 0}
 --- !u!65 &1584437052
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -24595,6 +24719,7 @@ MonoBehaviour:
   player: {fileID: 1220840252}
   activeDist: 3
   spawn: {fileID: 353496871}
+  body: {fileID: 0}
 --- !u!65 &1623311518
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -25492,6 +25617,7 @@ MonoBehaviour:
   player: {fileID: 1220840252}
   activeDist: 4
   spawn: {fileID: 1941964702}
+  body: {fileID: 0}
 --- !u!65 &1711272388
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -29030,8 +29156,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1951835403}
   - component: {fileID: 1951835405}
-  - component: {fileID: 1951835404}
   - component: {fileID: 1951835406}
+  - component: {fileID: 1951835404}
   m_Layer: 0
   m_Name: attackstone
   m_TagString: Untagged
@@ -29062,13 +29188,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 1951835402}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e7967bbf37e06d641ba7424679750147, type: 3}
+  m_Script: {fileID: 11500000, guid: a90869bdcd5c5d146b755367e71352d2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   damage: -5
   Cooldown: 0.5
   TimetoAtk: 5
   hit: {fileID: 0}
+  body: {fileID: 132925640}
 --- !u!136 &1951835405
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -31175,12 +31302,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 2100344963}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 066587b93ad15214f96b703733b05ea4, type: 3}
+  m_Script: {fileID: 11500000, guid: dab9738be2b4bf94781fcef4ff162349, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 1220840252}
   activeDist: 4
   spawn: {fileID: 1936452714}
+  body: {fileID: 2100344963}
 --- !u!65 &2100344967
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -31194,6 +31322,25 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.8525229, y: 0.8015593, z: 0.9114591}
   m_Center: {x: 0, y: 0.5271273, z: 0}
+--- !u!95 &2100344970
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2100344963}
+  m_Enabled: 1
+  m_Avatar: {fileID: 9000000, guid: 1db38da97b6ad094dbca967f13dd370f, type: 3}
+  m_Controller: {fileID: 9100000, guid: 478ec5e3141f6a04b992495092a18c6d, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1001 &2117215705
 PrefabInstance:
   m_ObjectHideFlags: 0
