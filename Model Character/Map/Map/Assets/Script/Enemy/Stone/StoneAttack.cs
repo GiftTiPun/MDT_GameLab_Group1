@@ -18,13 +18,13 @@ public class StoneAttack : MonoBehaviour
         TimetoAtk = Cooldown;
         hit = GetComponent<AudioSource>();
         anim = body.GetComponent<Animator>();
-        anim.SetBool("IsAttack",false);
+        
 
     }
 
     void OnTriggerStay(Collider other)
     {
-        anim.SetBool("IsAttack", true);
+        
 
         if (other.gameObject.tag == "Player")
         {
@@ -36,11 +36,13 @@ public class StoneAttack : MonoBehaviour
             }
             if (TimetoAtk == 0f)
             {
+                anim.SetTrigger("IsAttack");
                 PlayerHealth1 Phealth = GameObject.Find("player").GetComponent<PlayerHealth1>();
                 Phealth.adjustcurrenthealth(damage);
                 hit.volume = 0.1f;
                 hit.Play();
                 TimetoAtk = Cooldown;
+                
                 
 
 
@@ -57,7 +59,7 @@ public class StoneAttack : MonoBehaviour
     private void OnTriggerExit(Collider other)
     {
         TimetoAtk = Cooldown;
-        anim.SetBool("IsAttack", false);
+       
 
     }
 

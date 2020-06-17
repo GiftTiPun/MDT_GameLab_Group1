@@ -12,6 +12,7 @@ public class StoneAi : MonoBehaviour
     public Transform spawn;
     public GameObject body;
     Animator anim;
+    Rigidbody rigid;
 
 
 
@@ -19,7 +20,7 @@ public class StoneAi : MonoBehaviour
     {
         navMesh = GetComponent<NavMeshAgent>();
         anim = body.GetComponent<Animator>();
-        anim.SetFloat("Speed", 0f);
+        rigid = body.GetComponent<Rigidbody>();
 
     }
 
@@ -29,19 +30,19 @@ public class StoneAi : MonoBehaviour
         float dist = Vector3.Distance(player.position, transform.position);
         if (dist <= activeDist)
         {
-            anim.SetFloat("Speed", 1f);
+            anim.SetTrigger("IsMoving");
             navMesh.destination = player.position;
             
 
         }
-        else if (dist > activeDist && body.transform.position == spawn.transform.position)
+        else if (dist > activeDist && rigid.velocity.magnitude == 0f )
         {
-            
+            anim.SetTrigger("Idle");
         }
         else if (dist > activeDist)
         {
             navMesh.destination = spawn.position;
-            
+            anim.SetTrigger("Idle");
         }
 
     }

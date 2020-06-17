@@ -40,8 +40,7 @@ public class EnemyHealth1 : MonoBehaviour
 
     private void Start()
     {
-        enemy_current_health = enemy_max_health;
-        
+        enemy_current_health = enemy_max_health;       
         slider.value = CalculateHealth();
         
     }

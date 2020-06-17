@@ -12,14 +12,14 @@ public class EnemyAi : MonoBehaviour
     public Transform spawn;
     public GameObject body;
     Animator anim;
-
+    Rigidbody rigid;
 
     
     void Start()
     {
         navMesh = GetComponent<NavMeshAgent>();
         anim = body.GetComponent<Animator>();
-        anim.SetFloat("Speed", 0f);
+        rigid = body.GetComponent<Rigidbody>();
 
     }
 
@@ -30,19 +30,14 @@ public class EnemyAi : MonoBehaviour
         if (dist <= activeDist)
         {
             navMesh.destination = player.position;
-            anim.SetFloat("Speed", 1f);
+            anim.SetTrigger("Move");
             
         }
-        else if (dist > activeDist && body.transform.position == spawn.transform.position)
-        {
-            anim.SetFloat("Speed", 0f);
-            
-   
-        }
-        else if (dist > activeDist)
+        
+        else if (dist > activeDist )
         {
             navMesh.destination = spawn.position;
-            //anim.SetFloat("Speed", 1f);
+            anim.SetTrigger("Idle");
         }
 
     }

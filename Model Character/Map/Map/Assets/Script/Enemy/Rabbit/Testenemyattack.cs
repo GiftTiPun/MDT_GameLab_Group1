@@ -18,34 +18,36 @@ public class Testenemyattack : MonoBehaviour
         TimetoAtk = Cooldown;
         hit = GetComponent<AudioSource>();
         anim = body.GetComponent<Animator>();
-        anim.SetBool("HitPlayer", false);
+        
        
     }
   
     void OnTriggerStay(Collider other)
     {
         
+        
         if (other.gameObject.tag == "Player" )
         {
             if (TimetoAtk < 0f)
             {
                 TimetoAtk = 0f;
-                anim.SetBool("HitPlayer", false);
+                
             }
             if (TimetoAtk == 0f)
             {
+                anim.SetTrigger("Damage");
                 PlayerHealth1 Phealth = GameObject.Find("player").GetComponent<PlayerHealth1>();
                 Phealth.adjustcurrenthealth(damage);
                 hit.volume = 0.1f;
                 hit.Play();
                 TimetoAtk = Cooldown;
-                anim.SetBool("HitPlayer", true);
+                
 
             }
             if (TimetoAtk > 0f)
             {
                 TimetoAtk -= Time.deltaTime;
-                anim.SetBool("HitPlayer", false);
+                
             }
         }
         
