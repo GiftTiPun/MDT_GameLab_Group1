@@ -2010,7 +2010,7 @@ MonoBehaviour:
   damage: -5
   Cooldown: 0.5
   TimetoAtk: 5
-  hit: {fileID: 0}
+  hit: {fileID: 118816221}
   body: {fileID: 0}
 --- !u!65 &118816220
 BoxCollider:
@@ -3358,7 +3358,7 @@ MonoBehaviour:
   damage: -5
   Cooldown: 0.5
   TimetoAtk: 5
-  hit: {fileID: 0}
+  hit: {fileID: 227412439}
   body: {fileID: 490408393}
 --- !u!136 &227412438
 CapsuleCollider:
@@ -4689,7 +4689,7 @@ MonoBehaviour:
   damage: -10
   Cooldown: 1
   TimetoAtk: 10
-  hit: {fileID: 0}
+  hit: {fileID: 312837915}
   body: {fileID: 0}
 --- !u!136 &312837914
 CapsuleCollider:
@@ -11189,7 +11189,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 4.359798e+27, y: 947942.56, z: 1.0230485e-38, w: 6.69867e+31}
+  m_BoundingSphereOverride: {x: 9.47e-43, y: -2.0343227, z: 9.47e-43, w: 0}
   m_UseBoundingSphereOverride: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
@@ -12277,7 +12277,7 @@ MonoBehaviour:
   damage: -5
   Cooldown: 0.5
   TimetoAtk: 5
-  hit: {fileID: 0}
+  hit: {fileID: 782810954}
   body: {fileID: 0}
 --- !u!136 &782810953
 CapsuleCollider:
@@ -13095,7 +13095,7 @@ MonoBehaviour:
   damage: -5
   Cooldown: 0.5
   TimetoAtk: 5
-  hit: {fileID: 0}
+  hit: {fileID: 819507432}
   body: {fileID: 0}
 --- !u!136 &819507431
 CapsuleCollider:
@@ -15703,7 +15703,7 @@ MonoBehaviour:
   damage: -5
   Cooldown: 0.5
   TimetoAtk: 5
-  hit: {fileID: 0}
+  hit: {fileID: 988400954}
   body: {fileID: 0}
 --- !u!65 &988400953
 BoxCollider:
@@ -17043,7 +17043,7 @@ MonoBehaviour:
   damage: -5
   Cooldown: 0.5
   TimetoAtk: 5
-  hit: {fileID: 0}
+  hit: {fileID: 1057324215}
   body: {fileID: 1477730567}
 --- !u!136 &1057324214
 CapsuleCollider:
@@ -18837,7 +18837,7 @@ MonoBehaviour:
   damage: -5
   Cooldown: 0.5
   TimetoAtk: 5
-  hit: {fileID: 0}
+  hit: {fileID: 1202051459}
   body: {fileID: 2100344963}
 --- !u!136 &1202051458
 CapsuleCollider:
@@ -20867,7 +20867,7 @@ MonoBehaviour:
   damage: -5
   Cooldown: 0.5
   TimetoAtk: 5
-  hit: {fileID: 0}
+  hit: {fileID: 1352996978}
   body: {fileID: 321370910}
 --- !u!82 &1352996978
 AudioSource:
@@ -21471,7 +21471,7 @@ MonoBehaviour:
   damage: -10
   Cooldown: 1
   TimetoAtk: 10
-  hit: {fileID: 0}
+  hit: {fileID: 1402882199}
   body: {fileID: 0}
 --- !u!65 &1402882198
 BoxCollider:
@@ -22049,7 +22049,7 @@ MonoBehaviour:
   damage: -5
   Cooldown: 1
   TimetoAtk: 5
-  hit: {fileID: 0}
+  hit: {fileID: 1448239134}
   body: {fileID: 236049344}
 --- !u!136 &1448239133
 CapsuleCollider:
@@ -29194,7 +29194,7 @@ MonoBehaviour:
   damage: -5
   Cooldown: 0.5
   TimetoAtk: 5
-  hit: {fileID: 0}
+  hit: {fileID: 1951835406}
   body: {fileID: 132925640}
 --- !u!136 &1951835405
 CapsuleCollider:
