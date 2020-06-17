@@ -4,10 +4,12 @@ using UnityEngine;
 
 public class Soundmonarea : MonoBehaviour
 {
+    float sound;
+    //float keepfirst;
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
@@ -15,13 +17,12 @@ public class Soundmonarea : MonoBehaviour
     {
         if (other.gameObject.tag == "Player"& soundtest.back ==0)
         {
-            keep.monfight.volume = 0.1f;
-            soundtest.BGM.volume = 1.5f;
+            
+            keep.monfight.volume = 0f;
+            soundtest.BGM.volume =soundtest.musicvolume;
+
             soundtest.back = 5;
         }
-        if (keep.monfight.volume == 0.1f)
-        {
-            keep.monfight.volume = 0f;
-        }
+        
     }
 }
