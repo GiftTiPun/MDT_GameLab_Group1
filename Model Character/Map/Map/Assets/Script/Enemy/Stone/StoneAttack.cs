@@ -28,6 +28,7 @@ public class StoneAttack : MonoBehaviour
 
         if (other.gameObject.tag == "Player")
         {
+            anim.SetTrigger("IsAttack");
             if (TimetoAtk < 0f)
             {
                 TimetoAtk = 0f;
@@ -36,7 +37,7 @@ public class StoneAttack : MonoBehaviour
             }
             if (TimetoAtk == 0f)
             {
-                anim.SetTrigger("IsAttack");
+                
                 PlayerHealth1 Phealth = GameObject.Find("player").GetComponent<PlayerHealth1>();
                 Phealth.adjustcurrenthealth(damage);
                 hit.volume = 0.1f;
