@@ -1,0 +1,116 @@
+Ai
+
+using System.Collections;
+using System.Collections.Generic;
+using UnityEditor;
+using UnityEngine;
+using UnityEngine.AI;
+
+public class StoneAi : MonoBehaviour
+{
+    public Transform player;
+    public float activeDist;
+    private NavMeshAgent navMesh;
+    public Transform spawn;
+    public GameObject body;
+    Animation anim;
+
+
+
+    void Start()
+    {
+        navMesh = GetComponent<NavMeshAgent>();
+        anim = body.GetComponent<Animation>();
+        
+
+    }
+
+
+    void Update()
+    {
+        float dist = Vector3.Distance(player.position, transform.position);
+        if (dist <= activeDist)
+        {
+            navMesh.destination = player.position;
+            
+
+        }
+        else if (dist > activeDist && body.transform.position == spawn.transform.position)
+        {
+            
+
+
+        }
+        else if (dist > activeDist)
+        {
+            navMesh.destination = spawn.position;
+            
+        }
+
+    }
+}
+
+Attack
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class StoneAttack : MonoBehaviour
+{
+    public float damage = -5f;
+    public float Cooldown;
+    public float TimetoAtk = 0f;
+    public AudioSource hit;
+    public GameObject body;
+    
+
+
+
+    void Start()
+    {
+        TimetoAtk = Cooldown;
+        hit = GetComponent<AudioSource>();
+        
+       
+
+    }
+
+    void OnTriggerStay(Collider other)
+    {
+
+        if (other.gameObject.tag == "Player")
+        {
+            if (TimetoAtk < 0f)
+            {
+                TimetoAtk = 0f;
+                
+            }
+            if (TimetoAtk == 0f)
+            {
+                PlayerHealth1 Phealth = GameObject.Find("player").GetComponent<PlayerHealth1>();
+                Phealth.adjustcurrenthealth(damage);
+                hit.volume = 0.1f;
+                hit.Play();
+                TimetoAtk = Cooldown;
+               
+
+            }
+            if (TimetoAtk > 0f)
+            {
+                TimetoAtk -= Time.deltaTime;
+               
+            }
+        }
+
+    }
+    private void OnTriggerExit(Collider other)
+    {
+        TimetoAtk = Cooldown;
+    }
+
+    void Update()
+    {
+
+    }
+}
+
