@@ -43,9 +43,5 @@ public class Testenemyattack : MonoBehaviour
     {
         TimetoAtk = Cooldown;
     }
-    
-    void Update()
-    {
-        
-    }
+
 }

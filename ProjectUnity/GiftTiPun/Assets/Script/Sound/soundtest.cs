@@ -10,8 +10,8 @@ public class soundtest : MonoBehaviour
     //Renderer sound;
     public static AudioSource BGM;
     public static float back = 5;
-    public static float musicvolume=1f;
-    public static float vol;
+    //public static float musicvolume = 1f;
+    //public static float vol;
 
 
     // Start is called before the first frame update
