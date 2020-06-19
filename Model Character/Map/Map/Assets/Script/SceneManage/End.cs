@@ -8,5 +8,7 @@ public class End : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         SceneManager.LoadScene("Finish");
+        Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
     }
 }
