@@ -119,6 +119,7 @@
     <Compile Include="Assets\Script\Player\PlayerHealth1.cs" />
     <Compile Include="Assets\Script\Player\WalkingPlayer1.cs" />
     <Compile Include="Assets\Script\SceneManage\ChangeScene.cs" />
+    <Compile Include="Assets\Script\SceneManage\End.cs" />
     <Compile Include="Assets\Script\SceneManage\Quit.cs" />
     <Compile Include="Assets\Script\sound\BGM.cs" />
     <Compile Include="Assets\Script\sound\BGMBACK.cs" />
