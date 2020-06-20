@@ -9,7 +9,7 @@ public class ChagetoPlay : MonoBehaviour
     {
         SceneManager.LoadScene(scene);
         Time.timeScale = 1f;
-        PauseMenu pause = GameObject.Find("EventSystem").GetComponent<PauseMenu>();
-        pause.IsPause = false;
+        
+        
     }
 }

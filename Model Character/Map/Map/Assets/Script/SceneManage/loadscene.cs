@@ -10,11 +10,12 @@ public class loadscene : MonoBehaviour
     float countdown = 0f;
     public Slider loadbar;
     AsyncOperation operation;
-    float progress = 0f;
 
-    private void Start()
+
+
+   
+    public void Start()
     {
-        loadbar = GetComponent<Slider>();
         StartCoroutine(Load(1));
     }
     IEnumerator Load (int scene)
@@ -24,25 +25,27 @@ public class loadscene : MonoBehaviour
 
         while( !operation.isDone)
         {
-            progress = Mathf.Clamp01(operation.progress / .9f);
+            float progress = Mathf.Clamp01(operation.progress / .9f);
             Debug.Log(progress);
-            
+            loadbar.value = progress;
 
-            if ( operation.progress >= 0.9f )
+            if (progress == 1f )
             {
-                Invoke("nextscene", 5f); 
+                Debug.Log("invoke");
+                operation.allowSceneActivation = false;
+                Invoke("nextscene", 5f);           
+                Debug.Log("Fin");
             }
             yield return null;
         }
     }
 
-    private void nextscene()
+    public void nextscene()
     {
         operation.allowSceneActivation = true;
 
     }
-    private void Update()
-    {
-        loadbar.value = progress;
-    }
+
+   
+
 }
