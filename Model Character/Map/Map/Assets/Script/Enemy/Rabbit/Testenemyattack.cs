@@ -10,9 +10,10 @@ public class Testenemyattack : MonoBehaviour
     public AudioSource hit;
     public GameObject body;
     Animator anim;
+    public float monvolume = 1f;
 
 
-   
+
     void Start()
     {
         TimetoAtk = Cooldown;
@@ -59,6 +60,10 @@ public class Testenemyattack : MonoBehaviour
     
     void Update()
     {
-        
+        hit.volume = monvolume;
+    }
+    public void SetVolume(float vol)
+    {
+        monvolume = vol;
     }
 }

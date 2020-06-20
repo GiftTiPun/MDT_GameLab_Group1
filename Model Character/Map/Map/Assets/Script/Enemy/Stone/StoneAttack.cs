@@ -10,6 +10,7 @@ public class StoneAttack : MonoBehaviour
     public AudioSource hit;
     public GameObject body;
     Animator anim;
+    public float monvolume = 1f;
 
 
 
@@ -66,6 +67,10 @@ public class StoneAttack : MonoBehaviour
 
     void Update()
     {
-
+        hit.volume = monvolume;
+    }
+    public void SetVolume(float vol)
+    {
+        monvolume = vol;
     }
 }

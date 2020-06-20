@@ -18,7 +18,7 @@ public class fightzone : MonoBehaviour
         {
             BGM.back = 0;
             BGM.bgm.volume = 0f;
-            monfight.volume = 0.1f;
+            monfight.volume = 0.08f;
             monfight.Play();
         }
     }

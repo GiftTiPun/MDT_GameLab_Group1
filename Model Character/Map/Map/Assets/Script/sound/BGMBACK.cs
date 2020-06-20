@@ -16,7 +16,8 @@ public class BGMBACK : MonoBehaviour
         if (other.gameObject.tag == "Player" & BGM.back == 0)
         {
             fightzone.monfight.volume = 0f;
-            BGM.bgm.volume = 0.5f;
+            memozone.memo.volume = 0f;
+            BGM.bgm.volume = 0.4f;
             BGM.back = 5;
         }
     }

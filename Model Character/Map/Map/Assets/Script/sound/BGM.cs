@@ -10,9 +10,10 @@ public class BGM : MonoBehaviour
     void Start()
     {
         bgm = GetComponent<AudioSource>();
-        bgm.volume = 0.5f;
+        bgm.volume = 0.4f;
         bgm.Play();
     }
+    
 
     // Update is called once per frame
 }
