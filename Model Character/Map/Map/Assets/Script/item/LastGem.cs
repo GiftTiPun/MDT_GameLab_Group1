@@ -8,12 +8,14 @@ public class LastGem : MonoBehaviour
     public float totalscore;
     public GameObject gem;
     public GameObject GemCanvas;
+    public AudioSource wink;
     private void OnTriggerEnter(Collider other)
     {
-
+        wink = GameObject.Find("WINK").GetComponent<AudioSource>();
         if (other.gameObject.tag == "Player")
         {
             PlayerHealth1 PHealth = GameObject.Find("player").GetComponent<PlayerHealth1>();
+            wink.Play();
             PHealth.adjustcurrenthealth(100f);
             Destroy(body);
             GemCanvas.SetActive(true);

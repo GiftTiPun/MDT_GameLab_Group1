@@ -32,7 +32,7 @@ public class GemCreater : MonoBehaviour
         {
             gem4.SetActive(true);
             score.score++;
-        }
+        }  
     }
 
     public void Update()
