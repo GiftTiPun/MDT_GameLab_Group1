@@ -25,7 +25,7 @@ public class keep : MonoBehaviour
         if (other.gameObject.tag == "Player")
         {
             monfight.Play();
-            monfight.volume = 0.1f;
+            monfight.volume = 0.05f;
             soundtest.BGM.volume = 0f;
             soundtest.back = 0;
         }

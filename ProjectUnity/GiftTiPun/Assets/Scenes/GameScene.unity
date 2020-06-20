@@ -989,6 +989,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: bgmsound
       objectReference: {fileID: 0}
+    - target: {fileID: 2056621702121877994, guid: 218c6dfc59fe2874dac2785622b7efeb,
+        type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 92fcff1d1a9e24944b7337bfee207127, type: 3}
+    - target: {fileID: 2056621702121877994, guid: 218c6dfc59fe2874dac2785622b7efeb,
+        type: 3}
+      propertyPath: BypassEffects
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2056621702121877996, guid: 218c6dfc59fe2874dac2785622b7efeb,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1317,8 +1327,8 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1941098762}
-  - {fileID: 615673115}
   - {fileID: 982124635}
+  - {fileID: 615673115}
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2493,7 +2503,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 427403386}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!82 &982124636
 AudioSource:
@@ -3606,6 +3616,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 427403386}
     m_Modifications:
+    - target: {fileID: 4661881384870289034, guid: 7a11c5d81064203469516018c4816ebc,
+        type: 3}
+      propertyPath: m_Volume
+      value: 0.1
+      objectReference: {fileID: 0}
     - target: {fileID: 4661881384870289136, guid: 7a11c5d81064203469516018c4816ebc,
         type: 3}
       propertyPath: m_Name
@@ -3619,12 +3634,12 @@ PrefabInstance:
     - target: {fileID: 4661881384870289143, guid: 7a11c5d81064203469516018c4816ebc,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.634
+      value: 0.11
       objectReference: {fileID: 0}
     - target: {fileID: 4661881384870289143, guid: 7a11c5d81064203469516018c4816ebc,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -9.413
+      value: 0.343
       objectReference: {fileID: 0}
     - target: {fileID: 4661881384870289143, guid: 7a11c5d81064203469516018c4816ebc,
         type: 3}

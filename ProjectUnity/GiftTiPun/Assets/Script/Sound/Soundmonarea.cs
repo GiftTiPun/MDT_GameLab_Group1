@@ -19,7 +19,7 @@ public class Soundmonarea : MonoBehaviour
         {
             
             keep.monfight.volume = 0f;
-            soundtest.BGM.volume = 1f;
+            soundtest.BGM.volume = 0.51f;
             soundtest.back = 5;
         }
         
