@@ -19,6 +19,14 @@ public class camerarotation1 : MonoBehaviour
         X += speedH * Input.GetAxis("Mouse X");
         Y -= speedV * Input.GetAxis("Mouse Y");
 
+        if (Y >= 90)
+        {
+            Y = 90f;
+        }
+        if (Y<= -75)
+        {
+            Y = -75;
+        }
         transform.eulerAngles = new Vector3(Y, X, 0.0f);
 
 

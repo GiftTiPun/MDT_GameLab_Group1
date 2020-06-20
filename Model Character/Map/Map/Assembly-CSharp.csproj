@@ -112,6 +112,7 @@
     <Compile Include="Assets\Script\Enemy\Stone\StoneAttack.cs" />
     <Compile Include="Assets\Script\item\createWall.cs" />
     <Compile Include="Assets\Script\item\Gem.cs" />
+    <Compile Include="Assets\Script\item\GemcanvasDestroyer.cs" />
     <Compile Include="Assets\Script\item\GemCreater.cs" />
     <Compile Include="Assets\Script\item\LastGem.cs" />
     <Compile Include="Assets\Script\item\Potion.cs" />
@@ -121,6 +122,7 @@
     <Compile Include="Assets\Script\Player\PlayerAttack.cs" />
     <Compile Include="Assets\Script\Player\PlayerHealth1.cs" />
     <Compile Include="Assets\Script\Player\WalkingPlayer1.cs" />
+    <Compile Include="Assets\Script\SceneManage\ChagetoPlay.cs" />
     <Compile Include="Assets\Script\SceneManage\ChangeScene.cs" />
     <Compile Include="Assets\Script\SceneManage\End.cs" />
     <Compile Include="Assets\Script\SceneManage\Quit.cs" />
@@ -129,6 +131,7 @@
     <Compile Include="Assets\Script\sound\fightzone.cs" />
     <Compile Include="Assets\Script\sound\memozone.cs" />
     <Compile Include="Assets\Script\ui\HpBar.cs" />
+    <Compile Include="Assets\Script\ui\PauseMenu.cs" />
     <None Include="Assets\NatureStarterKit2\Standard Assets\Effects\GlassRefraction\Shaders\GlassStainedBumpDistort.shader" />
     <None Include="Assets\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\_BloomAndFlares\BlendOneOne.shader" />
     <None Include="Assets\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\NoiseEffectShaderRGB.shader" />
@@ -222,46 +225,46 @@
     <None Include="Assets\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\_BloomAndFlares\BlurAndFlares.shader" />
     <None Include="Assets\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\_BloomAndFlares\BlendForBloom.shader" />
     <Reference Include="Unity.Timeline.Editor">
-      <HintPath>D:/MDT_GameLab_Group1/Model Character/Map/Map/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
+      <HintPath>D:/kmutt work/unitylab/Project Group1/Model Character/Map/Map/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VSCode.Editor">
-      <HintPath>D:/MDT_GameLab_Group1/Model Character/Map/Map/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
+      <HintPath>D:/kmutt work/unitylab/Project Group1/Model Character/Map/Map/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.RenderPipelines.Core.Editor">
-      <HintPath>D:/MDT_GameLab_Group1/Model Character/Map/Map/Library/ScriptAssemblies/Unity.RenderPipelines.Core.Editor.dll</HintPath>
+      <HintPath>D:/kmutt work/unitylab/Project Group1/Model Character/Map/Map/Library/ScriptAssemblies/Unity.RenderPipelines.Core.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.RenderPipelines.Core.Runtime">
-      <HintPath>D:/MDT_GameLab_Group1/Model Character/Map/Map/Library/ScriptAssemblies/Unity.RenderPipelines.Core.Runtime.dll</HintPath>
+      <HintPath>D:/kmutt work/unitylab/Project Group1/Model Character/Map/Map/Library/ScriptAssemblies/Unity.RenderPipelines.Core.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
-      <HintPath>D:/MDT_GameLab_Group1/Model Character/Map/Map/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+      <HintPath>D:/kmutt work/unitylab/Project Group1/Model Character/Map/Map/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UI">
-      <HintPath>D:/MDT_GameLab_Group1/Model Character/Map/Map/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+      <HintPath>D:/kmutt work/unitylab/Project Group1/Model Character/Map/Map/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Timeline">
-      <HintPath>D:/MDT_GameLab_Group1/Model Character/Map/Map/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
+      <HintPath>D:/kmutt work/unitylab/Project Group1/Model Character/Map/Map/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
     </Reference>
     <Reference Include="Unity.CollabProxy.Editor">
-      <HintPath>D:/MDT_GameLab_Group1/Model Character/Map/Map/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
+      <HintPath>D:/kmutt work/unitylab/Project Group1/Model Character/Map/Map/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Rider.Editor">
-      <HintPath>D:/MDT_GameLab_Group1/Model Character/Map/Map/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
+      <HintPath>D:/kmutt work/unitylab/Project Group1/Model Character/Map/Map/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary">
-      <HintPath>D:/MDT_GameLab_Group1/Model Character/Map/Map/Library/ScriptAssemblies/Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary.dll</HintPath>
+      <HintPath>D:/kmutt work/unitylab/Project Group1/Model Character/Map/Map/Library/ScriptAssemblies/Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary.dll</HintPath>
     </Reference>
     <Reference Include="Unity.ShaderGraph.Editor">
-      <HintPath>D:/MDT_GameLab_Group1/Model Character/Map/Map/Library/ScriptAssemblies/Unity.ShaderGraph.Editor.dll</HintPath>
+      <HintPath>D:/kmutt work/unitylab/Project Group1/Model Character/Map/Map/Library/ScriptAssemblies/Unity.ShaderGraph.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.RenderPipelines.Core.ShaderLibrary">
-      <HintPath>D:/MDT_GameLab_Group1/Model Character/Map/Map/Library/ScriptAssemblies/Unity.RenderPipelines.Core.ShaderLibrary.dll</HintPath>
+      <HintPath>D:/kmutt work/unitylab/Project Group1/Model Character/Map/Map/Library/ScriptAssemblies/Unity.RenderPipelines.Core.ShaderLibrary.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
-      <HintPath>D:/MDT_GameLab_Group1/Model Character/Map/Map/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+      <HintPath>D:/kmutt work/unitylab/Project Group1/Model Character/Map/Map/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.UI">
-      <HintPath>D:/MDT_GameLab_Group1/Model Character/Map/Map/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+      <HintPath>D:/kmutt work/unitylab/Project Group1/Model Character/Map/Map/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>

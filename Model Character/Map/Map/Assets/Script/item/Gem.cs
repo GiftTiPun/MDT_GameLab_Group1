@@ -6,6 +6,7 @@ public class Gem : MonoBehaviour
 {
     public GameObject body;
     public float power;
+    public GameObject GemCanvas;
     
     private void OnTriggerEnter(Collider other)
     {
@@ -15,7 +16,11 @@ public class Gem : MonoBehaviour
             PlayerAttack PAttack = GameObject.Find("PlayerRangeAttack").GetComponent<PlayerAttack>();
             PAttack.attack_Power += power;
             Destroy(body);
+            GemCanvas.SetActive(true);
+            
+            
         }
     }
     
+
 }

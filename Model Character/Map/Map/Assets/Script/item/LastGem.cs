@@ -7,6 +7,7 @@ public class LastGem : MonoBehaviour
     public GameObject body;
     public float totalscore;
     public GameObject gem;
+    public GameObject GemCanvas;
     private void OnTriggerEnter(Collider other)
     {
 
@@ -15,6 +16,8 @@ public class LastGem : MonoBehaviour
             PlayerHealth1 PHealth = GameObject.Find("player").GetComponent<PlayerHealth1>();
             PHealth.adjustcurrenthealth(100f);
             Destroy(body);
+            GemCanvas.SetActive(true);
+            
         }
         
     }
@@ -27,4 +30,5 @@ public class LastGem : MonoBehaviour
             gem.SetActive(true);
         }
     }
+   
 }

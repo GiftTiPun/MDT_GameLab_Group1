@@ -35,7 +35,10 @@ public class WalkingPlayer1 : MonoBehaviour
         }
         if (Input.GetKey(KeyCode.Space))
         {
-            transform.position += transform.TransformDirection(Vector3.up) * 2 * Time.deltaTime * SpeedMovement;
+            if (transform.position.y <= 0.8f)
+            {
+                GetComponent<Rigidbody>().AddForce(Vector3.up * 350);
+            }
         }
         if (Input.GetKey(KeyCode.LeftShift))
         {
