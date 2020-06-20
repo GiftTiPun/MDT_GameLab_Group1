@@ -37,7 +37,7 @@ public class WalkingPlayer1 : MonoBehaviour
         {
             if (transform.position.y <= 0.8f)
             {
-                GetComponent<Rigidbody>().AddForce(Vector3.up * 350);
+                GetComponent<Rigidbody>().AddForce(Vector3.up * 250);
             }
         }
         if (Input.GetKey(KeyCode.LeftShift))
